@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Auto_assist</string>
+    <string name="title_activity_mainactivity">Mainactivity</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_illegal">IllegalActivity</string>
+
+    <string name="viewfinderview_status_text1">将二维码/条码放入取景框内</string>
+    <string name="viewfinderview_status_text2">即可自动扫描</string>
+    <string name="msg_camera_framework_bug">Sorry, the Android camera encountered a problem. You may need to restart the device.</string>
+    <string name="button_ok">OK</string>
+
+    <string name="ipaddress">192.168.1.102</string>
+</resources>

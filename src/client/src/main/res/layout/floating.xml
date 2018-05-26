@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <Button
+        android:id="@+id/close"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@drawable/close"
+        android:layout_marginTop="1dp"
+        android:layout_marginStart="1dp" />
+    <LinearLayout
+        android:layout_width="296dp"
+        android:layout_height="67dp"
+        android:orientation="vertical"
+        android:background="@drawable/music_bg"
+        android:weightSum="1">
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="歌名"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/pre"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_pre" />
+
+            <ImageView
+                android:id="@+id/start_stop"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dip"
+                android:src="@drawable/icon_pause" />
+
+            <ImageView
+                android:id="@+id/next"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dip"
+                android:src="@drawable/icon_next" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

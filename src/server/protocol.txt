@@ -1,0 +1,47 @@
+login	client	login,username,password
+		server	ok,userid,username,music_setting,error_setting
+				fail,the user does not exist
+				fail,the password is wrong
+				
+register	client	register,username,password,email
+			server	ok,register successfully
+					fail,email is wrong
+					
+book		client  book,latitude,longitude,id
+			server	ok,[types],stationid,stationname,[car_ids],number
+					fail
+					
+appointment	client 	appointment,id,name,time,stationid,stationname,type,number,carid
+			server	ok
+					fail
+					
+getorders	client	getorders,id
+			server	number,[name,time,stationname,type,number,car_id]
+					0
+	
+carinfo		client	carinfo,id,carid,brand,version,engineid,bodylevel,miles,oilmass,enginestate,transmissionstate,lightstate,vin,cityname
+			server	ok
+					fail
+			
+getinfos	client	getinfos,id
+			server	[carid,brand,version,engineid,bodylevel,miles,oilmass,enginestate,transmissionstate,lightstate],number
+					0
+				
+check		client	check,id
+			server	ok
+					fail,carnumber,[carid,mile,oil,engine,transmission,light]
+
+weizhang	client	weizhang,carid
+			server	totalscore,totalmoney,count,[occuredata,money,occurearea,info,fen]
+
+onmusic		client  onMusic,id,flag
+			server	ok
+					fail
+
+onerror		client	onError,id,flag
+			server	ok
+					fail
+				
+delcar		client	delcar,carid
+			server	ok
+					fail
